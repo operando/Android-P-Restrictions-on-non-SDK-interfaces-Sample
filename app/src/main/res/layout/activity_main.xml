@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/blacklist"
+            android:layout_width="200dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:text="blacklist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/dark_greylist"
+            android:layout_width="200dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="dark-greylist"
+            app:layout_constraintEnd_toEndOf="@+id/blacklist"
+            app:layout_constraintStart_toStartOf="@+id/blacklist"
+            app:layout_constraintTop_toBottomOf="@+id/blacklist" />
+
+        <Button
+            android:id="@+id/light_greylist"
+            android:layout_width="200dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="light-greylist"
+            app:layout_constraintEnd_toEndOf="@+id/dark_greylist"
+            app:layout_constraintStart_toStartOf="@+id/dark_greylist"
+            app:layout_constraintTop_toBottomOf="@+id/dark_greylist" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
