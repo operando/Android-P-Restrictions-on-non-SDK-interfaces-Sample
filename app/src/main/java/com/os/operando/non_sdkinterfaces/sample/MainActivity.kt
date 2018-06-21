@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             StrictMode.setVmPolicy(StrictMode.VmPolicy.Builder().detectNonSdkApiUsage().build())
+            // StrictMode.setVmPolicy(StrictMode.VmPolicy.Builder().permitNonSdkApiUsage().detectNonSdkApiUsage().build())
         }
 
         binding.blacklist.setOnClickListener {

@@ -8,8 +8,8 @@ android {
     defaultConfig {
         applicationId "com.os.operando.non_sdkinterfaces.sample"
         minSdkVersion 21
-        targetSdkVersion 27
-        // targetSdkVersion 28
+        // targetSdkVersion 27
+         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
