@@ -44,10 +44,11 @@ class MainActivity : AppCompatActivity() {
         binding.lightGreylist.setOnClickListener {
             // https://android.googlesource.com/platform/prebuilts/runtime/+/master/appcompat/hiddenapi-light-greylist.txt
             // Landroid/widget/Toast;->mDuration:I
-            val t = Toast.makeText(this, "", Toast.LENGTH_LONG)
+            val t = Toast.makeText(this, "ダイナミックおじゃまします", Toast.LENGTH_LONG)
             val f = t.javaClass.getDeclaredField("mDuration")
             f.isAccessible = true
             Log.d("test", f.getInt(t).toString())
+            t.show()
         }
     }
 }
